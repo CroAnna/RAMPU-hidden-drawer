@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hiddendrawer/hidden_drawer.dart';
-import 'package:hiddendrawer/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HiddenDrawer(),
+      home: const HiddenDrawer(),
+      theme: ThemeData(primarySwatch: Colors.green),
     );
   }
 }
